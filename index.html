@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="icon.jpeg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+<div class="head">
+    <h1>
+        Library
+    </h1>
+    <button style="background-color: aqua;" onclick="addDisplay();">add book</button>
+    <button style="background-color: rgb(218, 121, 121);" onclick="delRow();">Delete Book</button>
+</div>
+<div class="main">
+    <div class="left"> 
+        <h2>Book Registration form</h2>
+        <form action="">
+            <label for="">ISBN</label><input type="number" name="" id="isbn"><br>
+            <label for="">BOOK TITLE</label><input type="text" name="" id="title"><br>
+            <label for="">BOOK AUTHOR</label><input type="text" name="" id="author"><br>
+            <label for="">PAGES</label><input type="text" name="" id="pages"><br>
+            <label for="">READ</label><input type="checkbox"  id="read" value="yes, I'm checked"><br>
+            <input type="button" value="Add Book" onclick="addBookToLibrary(); hideDisplay();">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+    <div class="right">
+    <table id="tbl">
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>read</th>
+             </tr> 
+       <tr id="newrow"></tr>
+    </table></div>
+        
+</div>
+<div class="foot">
+   Copyright &copy; <span class="date"><script>mydate();</script></span>
+   
+   Japhet Moise HAHIRWABASENGA
+</div>
+
+</body>
+</html>
